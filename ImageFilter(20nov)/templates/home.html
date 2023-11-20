@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/mainpage.css') }}">
+
+</head>
+
+<body>
+    <!-- partial:index.partial.html -->
+    <!doctype html>
+
+    <html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+
+        <title>Home Page</title>
+
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/mainpage.css') }}">
+
+    </head>
+
+    <body> <!-- partial:index.partial.html -->
+
+        <section> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
+            <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
+            <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
+            <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
+            <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
+            <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
+            <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
+            <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
+            <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
+            <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
+            <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
+            <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
+            <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
+            <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
+            <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
+            <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
+            <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
+            <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
+            <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
+            <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
+            <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
+            <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
+            <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
+            <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
+            <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
+            <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
+            <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
+            <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
+            <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
+            <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
+            <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
+            <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
+            <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
+            <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
+            <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
+            <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
+            <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
+            <span></span>
+
+            <div class="signin">
+
+                <div class="content">
+
+                    <h2>Editopia - Edit your app online</h2>
+
+                    <div class="form">
+
+                        <div class="inputBox">
+                            <form id="loginForm">
+                                <input type="submit" value="Login">
+                            </form>
+                            <a href="{{ url_for('login') }}" class="loginButton"></a>
+                        </div>
+
+                        <script>
+                            document.getElementById("loginForm").addEventListener("submit", function (event) {
+                                // Prevent the default form submission
+                                event.preventDefault();
+
+                                // Redirect the user to the specified URL
+                                window.location.href = "{{ url_for('login') }}";
+                            });
+                        </script>
+                        <div class="form">
+
+                            <div class="inputBox">
+                                <form id="Registerform">
+                                    <input type="submit" value="Register">
+                                </form>
+                                <a href="{{ url_for('register') }}" class="loginButton"></a>
+                            </div>
+
+                            <script>
+                                document.getElementById("Registerform").addEventListener("submit", function (event) {
+                                    // Prevent the default form submission
+                                    event.preventDefault();
+
+                                    // Redirect the user to the specified URL
+                                    window.location.href = "{{ url_for('register') }}";
+                                });
+                            </script>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section> <!-- partial -->
+
+    </body>
+
+    </html>
+    <!-- partial -->
+
+</body>
+
+</html>
